@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+/* Глобальные настройки шрифтов (по желанию) */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #f9fafb; /* Светло-серый фон, если вдруг */
+}
