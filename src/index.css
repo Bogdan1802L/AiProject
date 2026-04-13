@@ -1,7 +1,35 @@
 @import "tailwindcss";
 
-/* Глобальные настройки шрифтов (по желанию) */
+/* Сглаживание шрифтов для лучшего рендеринга */
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    background-color: #f9fafb; /* Светло-серый фон, если вдруг */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #ffffff;
+    color: #111827; /* gray-900 */
+}
+
+/* Кастомный скроллбар для вебкита */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: #e5e7eb; /* gray-200 */
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #d1d5db; /* gray-300 */
+}
+
+/* Скрытие скроллбара для горизонтальных контейнеров, если нужно */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
